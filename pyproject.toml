@@ -1,0 +1,17 @@
+[project]
+name = "calibrated-counterfactual-dispatch"
+version = "0.1.0"
+description = "Reproducibility package for courier dispatch-policy simulation experiments"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "polars>=1.41.2",
+    "pyarrow>=24.0.0",
+    "pytz>=2026.2",
+    "scikit-learn>=1.9.0",
+    "torch>=2.12.0",
+    "tqdm>=4.68.1",
+]

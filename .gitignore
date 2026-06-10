@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.codex
+.agents
+
+# Large generated training artifacts
+agents/outputs/**
+!agents/outputs/
+!agents/outputs/**/
+!agents/outputs/**/.gitkeep
+!agents/outputs/README.md
+
+# Licensed/local data artifacts
+data/*.csv
+data/*.json
+data/features/*
+!data/features/.gitkeep
+!data/README.md

@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "mode": "BC AGENT",
+    "timestamp": "2026-02-07 02:23:29 CST",
+    "agent_ckpt": "Agents_workspace\\outputs\\bc_model\\bc_model.pt",
+    "threshold_name": "f1_opt",
+    "manifest_path": "Agents_workspace\\outputs\\features\\manifest.json",
+    "parquet_path": "Agents_workspace\\outputs\\features\\offers_observations.parquet",
+    "max_hours": 48,
+    "simulation_end_time": 1666281672,
+    "extended_end_time": 1666292930,
+    "simulation_extended": true,
+    "extension_seconds": 11258
+  },
+  "input_data": {
+    "total_events": 151695,
+    "unique_couriers": 4156,
+    "unique_orders": 131856
+  },
+  "order_kpis": {
+    "total_waybills": 151669,
+    "total_unique_orders": 131856,
+    "delivered_count": 125930,
+    "fetched_count": 125930,
+    "accepted_count": 125930,
+    "orders_rejected_count": 83038,
+    "waybills_rejected_count": 25739,
+    "total_rejection_events": 95668,
+    "not_assigned_count": 5922,
+    "simulated_delivery_count": 73729,
+    "lost_count": 5922,
+    "late_count": 22485,
+    "on_time_count": 103445,
+    "divergence_count": 79654,
+    "delivery_rate": 0.9550570319136027,
+    "fetched_rate": 0.9550570319136027,
+    "acceptance_rate": 0.9550570319136027,
+    "orders_rejection_rate": 0.6297627715083121,
+    "waybills_rejection_rate": 0.16970508146028523,
+    "not_assigned_rate": 0.044912631962140515,
+    "simulated_delivery_rate": 0.5854760581275311,
+    "lost_rate": 0.044912631962140515,
+    "lateness_rate": 0.17855157627253235,
+    "on_time_rate": 0.8214484237274676,
+    "divergence_rate": 0.5251831290507618,
+    "total_income_delta": -6622.155937541175,
+    "avg_income_delta": -0.04366189489969061,
+    "avg_delivery_duration_sec": 1619.231729494072,
+    "divergence_types": {
+      "agent_prune_hist_keep": 79638,
+      "agent_keep_hist_prune": 16
+    },
+    "unique_waybills": 151669,
+    "unique_order_ids": 131856,
+    "completed_waybills": 131852,
+    "completed_order_ids": 125930
+  },
+  "courier_kpis": {
+    "utilization_metrics": {
+      "total_couriers": 4122,
+      "total_blocks": 74605,
+      "total_orders_delivered": 125630,
+      "total_block_order_credits": 166772,
+      "avg_utilization": 0.8645130153502731,
+      "min_utilization": 0.0,
+      "max_utilization": 1.0,
+      "total_block_time_hours": 30735.105555555554,
+      "total_active_time_hours": 27143.306944444445,
+      "total_idle_time_hours": 3591.7986111111113,
+      "overall_utilization": 0.8831369358852951,
+      "underutilized_couriers_count": 14,
+      "underutilized_couriers": [
+        {
+          "courier_id": 4362,
+          "utilization": 0.27692681740821784,
+          "active_hours": 0.3163888888888889,
+          "total_hours": 1.1425
+        },
+        {
+          "courier_id": 2286,
+          "utilization": 0.2980900409276944,
+          "active_hours": 0.2427777777777778,
+          "total_hours": 0.8144444444444444
+        },
+        {
+          "courier_id": 4452,
+          "utilization": 0.3813300793166565,
+          "active_hours": 0.3472222222222222,
+          "total_hours": 0.9105555555555556
+        },
+        {
+          "courier_id": 2090,
+          "utilization": 0.39653716216216217,
+          "active_hours": 0.5216666666666666,
+          "total_hours": 1.3155555555555556
+        },
+        {
+          "courier_id": 0,
+          "utilization": 0.4002092050209205,
+          "active_hours": 0.5313888888888889,
+          "total_hours": 1.3277777777777777
+        },
+        {
+          "courier_id": 3704,
+          "utilization": 0.4005457853244391,
+          "active_hours": 0.36694444444444446,
+          "total_hours": 0.9161111111111111
+        },
+        {
+          "courier_id": 2593,
+          "utilization": 0.401745018882667,
+          "active_hours": 1.7138888888888888,
+          "total_hours": 4.266111111111111
+        },
+        {
+          "courier_id": 4201,
+          "utilization": 0.44197171381031614,
+          "active_hours": 0.5902777777777778,
+          "total_hours": 1.3355555555555556
+        },
+        {
+          "courier_id": 4492,
+          "utilization": 0.4549242424242424,
+          "active_hours": 0.33361111111111114,
+          "total_hours": 0.7333333333333333
+        },
+        {
+          "courier_id": 2167,
+          "utilization": 0.46832557697787064,
+          "active_hours": 1.3697222222222223,
+          "total_hours": 2.924722222222222
+        }
+      ]
+    },
+    "delivery_metrics": {
+      "total_couriers": 4156,
+      "total_orders_delivered": 125930,
+      "total_waybills_offered": 151669,
+      "total_waybills_accepted": 84392,
+      "total_waybills_rejected": 21521,
+      "total_active_time_hours": 56641.56722222222,
+      "total_block_time_hours": 30188.967777777776,
+      "total_idle_time_hours": 0.0,
+      "overall_utilization": 1.0,
+      "avg_utilization": 0.9908887555748365,
+      "min_utilization": 0.27692681740821784,
+      "max_utilization": 1.0,
+      "avg_capacity": 1.0,
+      "max_capacity": 1,
+      "total_late_deliveries": 22485,
+      "total_on_time_deliveries": 103445,
+      "overall_on_time_rate": 0.8214484237274676,
+      "underutilized_couriers_count": 8,
+      "underutilized_couriers": [
+        {
+          "courier_id": 4362,
+          "utilization": 0.27692681740821784,
+          "active_hours": 0.3163888888888889,
+          "total_hours": 1.1425
+        },
+        {
+          "courier_id": 2286,
+          "utilization": 0.2980900409276944,
+          "active_hours": 0.2427777777777778,
+          "total_hours": 0.8144444444444444
+        },
+        {
+          "courier_id": 4452,
+          "utilization": 0.3813300793166565,
+          "active_hours": 0.3472222222222222,
+          "total_hours": 0.9105555555555556
+        },
+        {
+          "courier_id": 2090,
+          "utilization": 0.39653716216216217,
+          "active_hours": 0.5216666666666666,
+          "total_hours": 1.3155555555555556
+        },
+        {
+          "courier_id": 3704,
+          "utilization": 0.4005457853244391,
+          "active_hours": 0.36694444444444446,
+          "total_hours": 0.9161111111111111
+        },
+        {
+          "courier_id": 0,
+          "utilization": 0.4247498912570683,
+          "active_hours": 0.5425,
+          "total_hours": 1.2772222222222223
+        },
+        {
+          "courier_id": 4492,
+          "utilization": 0.4549242424242424,
+          "active_hours": 0.33361111111111114,
+          "total_hours": 0.7333333333333333
+        },
+        {
+          "courier_id": 3950,
+          "utilization": 0.49536493014753885,
+          "active_hours": 1.0538888888888889,
+          "total_hours": 2.1275
+        }
+      ]
+    }
+  },
+  "capacity_metrics": {
+    "total_observations": 73729,
+    "overshoot_count": 18957,
+    "overshoot_rate": 0.257117280852853,
+    "avg_realized": 1.0,
+    "avg_original": 1.4682418044460117,
+    "max_realized": 1,
+    "max_overshoot": 1
+  },
+  "divergence_metrics": {
+    "total_events": 151669,
+    "aligned_events": 72015,
+    "divergence_count": 79654,
+    "divergence_rate": 0.5251831290507618,
+    "divergence_types": {
+      "agent_prune_hist_keep": 79638,
+      "agent_keep_hist_prune": 16
+    },
+    "divergences_sample": []
+  },
+  "income_metrics": {
+    "total_income_delta": -6622.155937541175,
+    "avg_income_delta": -0.08981752007407093,
+    "income_events_count": 73729
+  }
+}

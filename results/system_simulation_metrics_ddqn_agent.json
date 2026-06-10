@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "mode": "TD AGENT",
+    "timestamp": "2026-02-07 09:33:08 CST",
+    "agent_ckpt": "Agents_workspace\\outputs\\td_model\\td_model.pt",
+    "threshold_name": "f1_opt",
+    "manifest_path": "Agents_workspace\\outputs\\features\\manifest.json",
+    "parquet_path": "Agents_workspace\\outputs\\features\\offers_observations.parquet",
+    "max_hours": 48,
+    "simulation_end_time": 1666281672,
+    "extended_end_time": 1666292750,
+    "simulation_extended": true,
+    "extension_seconds": 11078
+  },
+  "input_data": {
+    "total_events": 151695,
+    "unique_couriers": 4156,
+    "unique_orders": 131856
+  },
+  "order_kpis": {
+    "total_waybills": 146911,
+    "total_unique_orders": 131856,
+    "delivered_count": 130361,
+    "fetched_count": 130361,
+    "accepted_count": 130361,
+    "orders_rejected_count": 77949,
+    "waybills_rejected_count": 16550,
+    "total_rejection_events": 73846,
+    "not_assigned_count": 1491,
+    "simulated_delivery_count": 75081,
+    "lost_count": 1491,
+    "late_count": 21986,
+    "on_time_count": 108375,
+    "divergence_count": 76835,
+    "delivery_rate": 0.9886618735590341,
+    "fetched_rate": 0.9886618735590341,
+    "acceptance_rate": 0.9886618735590341,
+    "orders_rejection_rate": 0.5911676374226429,
+    "waybills_rejection_rate": 0.11265323903587887,
+    "not_assigned_rate": 0.011307790316709138,
+    "simulated_delivery_rate": 0.5759467939030846,
+    "lost_rate": 0.011307790316709138,
+    "lateness_rate": 0.16865473569549175,
+    "on_time_rate": 0.8313452643045083,
+    "divergence_rate": 0.5230037233427041,
+    "total_income_delta": -7041.699374758789,
+    "avg_income_delta": -0.04793173673012088,
+    "avg_delivery_duration_sec": 1597.159748804747,
+    "divergence_types": {
+      "agent_keep_hist_prune": 2989,
+      "agent_prune_hist_keep": 73846
+    },
+    "unique_waybills": 146911,
+    "unique_order_ids": 131856,
+    "completed_waybills": 131852,
+    "completed_order_ids": 130361
+  },
+  "courier_kpis": {
+    "utilization_metrics": {
+      "total_couriers": 4122,
+      "total_blocks": 74605,
+      "total_orders_delivered": 129892,
+      "total_block_order_credits": 172080,
+      "avg_utilization": 0.8749656346790136,
+      "min_utilization": 0.0,
+      "max_utilization": 1.0,
+      "total_block_time_hours": 30705.249722222223,
+      "total_active_time_hours": 27324.91611111111,
+      "total_idle_time_hours": 3380.333611111111,
+      "overall_utilization": 0.889910238747719,
+      "underutilized_couriers_count": 8,
+      "underutilized_couriers": [
+        {
+          "courier_id": 2286,
+          "utilization": 0.2980900409276944,
+          "active_hours": 0.2427777777777778,
+          "total_hours": 0.8144444444444444
+        },
+        {
+          "courier_id": 4853,
+          "utilization": 0.3482483524106833,
+          "active_hours": 0.2788888888888889,
+          "total_hours": 0.8008333333333333
+        },
+        {
+          "courier_id": 2090,
+          "utilization": 0.39653716216216217,
+          "active_hours": 0.5216666666666666,
+          "total_hours": 1.3155555555555556
+        },
+        {
+          "courier_id": 3407,
+          "utilization": 0.4626935710933834,
+          "active_hours": 0.2738888888888889,
+          "total_hours": 0.5919444444444445
+        },
+        {
+          "courier_id": 4844,
+          "utilization": 0.46629213483146065,
+          "active_hours": 0.46111111111111114,
+          "total_hours": 0.9888888888888889
+        },
+        {
+          "courier_id": 1654,
+          "utilization": 0.47270471464019853,
+          "active_hours": 0.42333333333333334,
+          "total_hours": 0.8955555555555555
+        },
+        {
+          "courier_id": 450,
+          "utilization": 0.48148148148148145,
+          "active_hours": 0.25277777777777777,
+          "total_hours": 0.525
+        },
+        {
+          "courier_id": 2167,
+          "utilization": 0.48646595118244845,
+          "active_hours": 1.4227777777777777,
+          "total_hours": 2.924722222222222
+        }
+      ]
+    },
+    "delivery_metrics": {
+      "total_couriers": 4156,
+      "total_orders_delivered": 130361,
+      "total_waybills_offered": 146911,
+      "total_waybills_accepted": 88638,
+      "total_waybills_rejected": 15059,
+      "total_active_time_hours": 57861.57194444445,
+      "total_block_time_hours": 30188.967777777776,
+      "total_idle_time_hours": 0.0,
+      "overall_utilization": 1.0,
+      "avg_utilization": 0.9943740750767335,
+      "min_utilization": 0.2980900409276944,
+      "max_utilization": 1.0,
+      "avg_capacity": 1.0,
+      "max_capacity": 1,
+      "total_late_deliveries": 21986,
+      "total_on_time_deliveries": 108375,
+      "overall_on_time_rate": 0.8313452643045083,
+      "underutilized_couriers_count": 4,
+      "underutilized_couriers": [
+        {
+          "courier_id": 2286,
+          "utilization": 0.2980900409276944,
+          "active_hours": 0.2427777777777778,
+          "total_hours": 0.8144444444444444
+        },
+        {
+          "courier_id": 4853,
+          "utilization": 0.3607353451266042,
+          "active_hours": 0.28888888888888886,
+          "total_hours": 0.8008333333333333
+        },
+        {
+          "courier_id": 2090,
+          "utilization": 0.39653716216216217,
+          "active_hours": 0.5216666666666666,
+          "total_hours": 1.3155555555555556
+        },
+        {
+          "courier_id": 3407,
+          "utilization": 0.4903801032379165,
+          "active_hours": 0.2902777777777778,
+          "total_hours": 0.5919444444444445
+        }
+      ]
+    }
+  },
+  "capacity_metrics": {
+    "total_observations": 75081,
+    "overshoot_count": 19412,
+    "overshoot_rate": 0.25854743543639536,
+    "avg_realized": 1.0,
+    "avg_original": 1.4767917315965424,
+    "max_realized": 1,
+    "max_overshoot": 1
+  },
+  "divergence_metrics": {
+    "total_events": 146911,
+    "aligned_events": 70076,
+    "divergence_count": 76835,
+    "divergence_rate": 0.5230037233427041,
+    "divergence_types": {
+      "agent_keep_hist_prune": 2989,
+      "agent_prune_hist_keep": 73846
+    },
+    "divergences_sample": []
+  },
+  "income_metrics": {
+    "total_income_delta": -7041.699374758789,
+    "avg_income_delta": -0.0937880339201501,
+    "income_events_count": 75081
+  }
+}
