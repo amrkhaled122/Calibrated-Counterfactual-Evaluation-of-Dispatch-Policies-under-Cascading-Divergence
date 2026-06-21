@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this repository, source code, experimental setup, or derived artifacts, please cite the paper and acknowledge the Meituan dataset as required by its license."
+title: "Calibrated Counterfactual Evaluation of Dispatch Policies under Cascading Divergence"
+type: software
+authors:
+  - family-names: Abdelbaky
+    given-names: Amr
+    affiliation: "The American University in Cairo"
+  - family-names: Qin
+    given-names: Zhiwei
+    affiliation: "Santa Clara University"
+  - family-names: Sakr
+    given-names: Nourhan
+    affiliation: "The American University in Cairo"
+repository-code: "https://github.com/amrkhaled122/Calibrated-Counterfactual-Evaluation-of-Dispatch-Policies-under-Cascading-Divergence"
+abstract: "Code and reproducibility artifacts for calibrated counterfactual evaluation of dispatch policies under cascading divergence in sequential courier-order systems."
+keywords:
+  - reinforcement learning
+  - counterfactual policy evaluation
+  - dispatch optimization
+  - sequential decision making
+  - simulator drift
+  - cascading divergence

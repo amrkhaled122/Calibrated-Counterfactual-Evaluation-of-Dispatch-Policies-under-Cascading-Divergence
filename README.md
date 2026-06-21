@@ -1,8 +1,26 @@
 # Calibrated Counterfactual Evaluation of Dispatch Policies under Cascading Divergence
 
-This repository contains the data, agents, and simulator needed to reproduce the ECML PKDD 2026 paper results for counterfactual dispatch-policy evaluation.
+This repository contains the data-processing code, agents, simulator, and result-analysis utilities needed to reproduce the ECML PKDD 2026 paper results for counterfactual dispatch-policy evaluation.
 
-The accepted paper PDF is not included in this repository. The supplementary reference material is kept at `Accepted_paper/Supplementary material.pdf`.
+## Citation
+
+If you use this repository, source code, experimental setup, or derived artifacts, please cite the final Springer proceedings version of the paper when it becomes available. The official BibTeX entry will be added here after Springer publishes it.
+
+This work uses the public Meituan INFORMS TSL Research Challenge dataset. Please also follow the dataset license and acknowledgment requirements:
+
+```bibtex
+@misc{meituan2024informs_tsl_challenge,
+  title        = {Meituan INFORMS TSL Research Challenge Dataset},
+  author       = {{Meituan}},
+  year         = {2024},
+  url          = {https://github.com/meituan/Meituan-INFORMS-TSL-Research-Challenge},
+  note         = {Available under the Creative Commons Attribution-NonCommercial 4.0 International license}
+}
+```
+
+Dataset acknowledgment:
+
+> This research was supported by data provided by Meituan.
 
 ## Layout
 
@@ -10,7 +28,6 @@ The accepted paper PDF is not included in this repository. The supplementary ref
 - `agents/`: BC and DDQN agent code plus local output directories for generated model artifacts.
 - `simulation/`: simulator, integrated DDQN training, and result-analysis utilities.
 - `results/`: generated simulation outputs for baseline, BC, and DDQN.
-- `Accepted_paper/`: supplementary material only.
 
 ## Reproduce Results
 
